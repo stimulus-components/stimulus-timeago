@@ -4,7 +4,7 @@
 [![](https://img.shields.io/npm/v/stimulus-timeago.svg)](https://www.npmjs.com/package/stimulus-timeago)
 [![](https://github.com/stimulus-components/stimulus-timeago/workflows/Lint/badge.svg)](https://github.com/stimulus-components/stimulus-timeago)
 [![](https://img.shields.io/github/license/stimulus-components/stimulus-timeago.svg)](https://github.com/stimulus-components/stimulus-timeago)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/073b5fee-358d-4dbf-b807-52034690f8ef/deploy-status)](https://stimulus-timeago.netlify.com)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d62d950e-aae7-464d-8333-1078a16ec481/deploy-status)](https://stimulus-timeago.netlify.com)
 
 ## Getting started
 
