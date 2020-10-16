@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+    <title>Stimulus Timeago</title>
+    <script type="module" src="./src/index.js" defer></script>
+    <script src="https://unpkg.com/stimulus/dist/stimulus.umd.js" defer></script>
+
+    <script type="module" defer>
+      import Timeago from './src/index.js'
+
+      const application = Stimulus.Application.start()
+      application.register('timeago', Timeago)
+    </script>
+
+    <style>
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      li {
+        display: inline-block;
+        margin: 0 10px;
+      }
+
+      a {
+        color: #667eea;
+        display: inline-block;
+      }
+
+      .badges a {
+        margin: 0 0.25rem;
+      }
+
+      pre code {
+        border-radius: 0.5rem;
+        text-align: left;
+        font-family: Menlo, 'Courier New', Courier, monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="w-full max-w-6xl mx-auto my-24 p-4">
+      <h1 class="text-center mb-8 text-5xl font-bold">Stimulus Timeago</h1>
+
+      <p class="text-center mb-4">
+        A Stimulus controller that returns the distance between the given date and now in words.
+      </p>
+
+      <p class="text-center badges">
+        <a href="https://www.npmjs.com/package/stimulus-timeago">
+          <img src="https://img.shields.io/npm/dt/stimulus-timeago.svg" />
+        </a>
+
+        <a href="https://www.npmjs.com/package/stimulus-timeago">
+          <img src="https://img.shields.io/npm/v/stimulus-timeago.svg" />
+        </a>
+
+        <a href="https://github.com/stimulus-components/stimulus-timeago">
+          <img src="https://github.com/stimulus-components/stimulus-timeago/workflows/Lint/badge.svg" />
+        </a>
+
+        <a href="https://github.com/stimulus-components/stimulus-timeago">
+          <img src="https://img.shields.io/github/license/stimulus-components/stimulus-timeago.svg" />
+        </a>
+
+        <a href="https://stimulus-timeago.netlify.com/">
+          <img src="https://api.netlify.com/api/v1/badges/073b5fee-358d-4dbf-b807-52034690f8ef/deploy-status" />
+        </a>
+      </p>
+
+      <h2 class="text-center text-2xl font-bold my-4">Essential links</h2>
+
+      <ul class="text-center mb-8">
+        <li>
+          <a href="https://github.com/stimulus-components/stimulus-timeago" target="_blank" rel="noopener">
+            Github
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.npmjs.com/package/stimulus-timeago" target="_blank" rel="noopener">
+            Npm
+          </a>
+        </li>
+      </ul>
+
+      <section class="mt-16">
+        Stimulus 1.0.0 was released
+        <time
+          data-controller="timeago"
+          data-timeago-datetime="2018-01-30 09:00"
+          data-timeago-refresh-interval="1000"
+          data-timeago-include-seconds=""
+          data-timeago-add-suffix=""
+        ></time
+        >.
+      </section>
+    </div>
+  </body>
+</html>
