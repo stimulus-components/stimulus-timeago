@@ -39,10 +39,10 @@ In your view:
 
 | Attribute | Default | Description | Optional |
 | --------- | ------- | ----------- | -------- |
-| `data-timeago-datetime` | `undefined` | Delay before autogrow on resize in milliseconds (0 to disable). | ❌ |
-| `data-timeago-refresh-interval` | `undefined` | Delay before autogrow on resize in milliseconds (0 to disable). | ✅ |
-| `data-timeago-include-seconds` | `false` | Delay before autogrow on resize in milliseconds (0 to disable). | ✅ |
-| `data-timeago-add-suffix` | `false` | Delay before autogrow on resize in milliseconds (0 to disable). | ✅ |
+| `data-timeago-datetime` | `undefined` | String that can be parsed by Date.parse(). | ❌ |
+| `data-timeago-refresh-interval` | `undefined` | Interval in milliseconds to reload the distance. | ✅ |
+| `data-timeago-include-seconds` | `false` | Distances less than a minute are more detailed | ✅ |
+| `data-timeago-add-suffix` | `false` | Result specifies if now is earlier or later than the passed date | ✅ |
 
 `includeSeconds` and `addSuffix` are the options of the [date-fns/formatDistanceToNow](https://date-fns.org/v2.2.1/docs/formatDistanceToNow) method.
 
