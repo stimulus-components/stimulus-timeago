@@ -10,6 +10,8 @@
 
 A Stimulus controller that returns the distance between the given date and now in words.
 
+This controller is using [date-fns/formatDistanceToNow](https://date-fns.org/v2.2.1/docs/formatDistanceToNow) behind the scene.
+
 ## Installation
 
 ```bash
