@@ -2,7 +2,9 @@ import { Controller } from 'stimulus'
 import formatDistanceToNow from 'date-fns/formatDistanceToNow'
 
 export default class extends Controller {
-  static isValid = true
+  initialize () {
+    this.isValid = true
+  }
 
   connect () {
     this.load()
