@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.0] - 2020-11-06
+
+### Changed
+
+- Catch`Invalid Date` error and display given value instead
+
 ## [1.0.0] - 2020-10-15
 
 ### Added
