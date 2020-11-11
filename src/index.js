@@ -23,7 +23,8 @@ export default class extends Controller {
     const date = Date.parse(datetime)
     const options = {
       includeSeconds: this.data.has('includeSeconds') || false,
-      addSuffix: this.data.has('addSuffix') || false
+      addSuffix: this.data.has('addSuffix') || false,
+      locale: this.locale
     }
 
     if (Number.isNaN(date)) {

@@ -56,16 +56,23 @@ You can use inheritance to extend the functionality of any Stimulus components.
 
 ```js
 import Timeago from "stimulus-timeago"
+import { fr } from 'date-fns/locale'
 
 export default class extends Timeago {
   connect() {
     super.connect()
     console.log("Do what you want here.")
   }
+
+  // You can override this getter to change the locale.
+  // Don't forget to import it.
+  get locale () {
+    return fr
+  }
 }
 ```
 
-These controllers will automatically have access to targets defined in the parent class.
+This controller will automatically has access to targets defined in the parent class.
 
 If you override the connect, disconnect or any other methods from the parent, you'll want to call `super.method()` to make sure the parent functionality is executed.
 
