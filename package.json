@@ -2,7 +2,17 @@
   "name": "stimulus-timeago",
   "version": "1.1.0",
   "description": "A Stimulus controller that returns the distance between the given date and now in words.",
+  "keywords": [
+    "stimulus",
+    "stimulusjs",
+    "stimulus controller",
+    "time-ago",
+    "distance from now"
+  ],
   "repository": "git@github.com:stimulus-components/stimulus-timeago.git",
+  "bugs": {
+    "url": "https://github.com/stimulus-components/stimulus-timeago/issues"
+  },
   "author": "Guillaume Briday <guillaumebriday@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/stimulus-components/stimulus-timeago",
