@@ -2,6 +2,13 @@ import { Controller } from 'stimulus'
 import formatDistanceToNow from 'date-fns/formatDistanceToNow'
 
 export default class extends Controller {
+  static values = {
+    datetime: String,
+    refreshInterval: Number,
+    includeSeconds: Boolean,
+    addSuffix: Boolean
+  }
+
   initialize () {
     this.isValid = true
   }
@@ -9,7 +16,7 @@ export default class extends Controller {
   connect () {
     this.load()
 
-    if (this.data.has('refreshInterval') && this.isValid) {
+    if (this.hasRefreshIntervalValue && this.isValid) {
       this.startRefreshing()
     }
   }
@@ -19,11 +26,11 @@ export default class extends Controller {
   }
 
   load () {
-    const datetime = this.data.get('datetime')
+    const datetime = this.datetimeValue
     const date = Date.parse(datetime)
     const options = {
-      includeSeconds: this.data.has('includeSeconds') || false,
-      addSuffix: this.data.has('addSuffix') || false,
+      includeSeconds: this.hasIncludeSecondsValue,
+      addSuffix: this.hasAddSuffixValue,
       locale: this.locale
     }
 
@@ -42,7 +49,7 @@ export default class extends Controller {
   startRefreshing () {
     this.refreshTimer = setInterval(() => {
       this.load()
-    }, this.data.get('refreshInterval'))
+    }, this.refreshIntervalValue)
   }
 
   stopRefreshing () {
