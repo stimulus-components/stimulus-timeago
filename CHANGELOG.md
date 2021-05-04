@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Moving from [Snowpack](https://www.snowpack.dev/) to [Vite](https://github.com/vitejs/vite)
 - Upgrading Node to 14.16.1
 - Defining `date-fns` and `Stimulus` as external dependencies reducing the package size from `51.13kb` to `0.95kb`.
+- Using `stimulus` as peer dependencies.
 
 ## [2.0.0] - 2020-12-05
 
