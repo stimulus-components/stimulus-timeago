@@ -1,6 +1,6 @@
 import { waitFor } from '@testing-library/dom'
 import { Application } from 'stimulus'
-import Timeago from '../src/index.js'
+import Timeago from '../src/index'
 
 const startStimulus = () => {
   const application = Application.start()
@@ -9,10 +9,10 @@ const startStimulus = () => {
 
 const spyError = jest.spyOn(console, 'error')
 
-const lastMonth = new Date()
+const lastMonth: Date = new Date()
 lastMonth.setMonth(lastMonth.getMonth() - 1)
 
-const fewSecondsAgo = new Date()
+const fewSecondsAgo: Date = new Date()
 fewSecondsAgo.setSeconds(fewSecondsAgo.getSeconds() - 8)
 
 describe('#load', () => {
@@ -30,7 +30,7 @@ describe('#load', () => {
   })
 
   it('updates the dateTime attribute', async () => {
-    const time = document.querySelector('time')
+    const time: HTMLTimeElement = document.querySelector('time')
 
     await waitFor(() => {
       expect(time.getAttribute('datetime')).toBe(lastMonth.toISOString())
@@ -38,7 +38,7 @@ describe('#load', () => {
   })
 
   it('updates the innerText', async () => {
-    const time = document.querySelector('time')
+    const time: HTMLTimeElement = document.querySelector('time')
 
     await waitFor(() => {
       expect(time.textContent).toBe('about 1 month')
@@ -55,7 +55,7 @@ describe('#load', () => {
     `
 
     await waitFor(() => {
-      const time = document.querySelector('time')
+      const time: HTMLTimeElement = document.querySelector('time')
 
       expect(time.textContent).toBe('about 1 month ago')
     })
@@ -71,7 +71,7 @@ describe('#load', () => {
     `
 
     await waitFor(() => {
-      const time = document.querySelector('time')
+      const time: HTMLTimeElement = document.querySelector('time')
 
       expect(time.textContent).toBe('less than 10 seconds')
     })
@@ -85,7 +85,7 @@ describe('#load', () => {
       ></time>.
     `
 
-    const time = document.querySelector('time')
+    const time: HTMLTimeElement = document.querySelector('time')
 
     await waitFor(() => {
       expect(time.textContent).toBe('invalidDate')

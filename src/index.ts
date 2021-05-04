@@ -1,7 +1,17 @@
 import { Controller } from 'stimulus'
-import formatDistanceToNow from 'date-fns/formatDistanceToNow'
+import { formatDistanceToNow } from 'date-fns'
 
 export default class extends Controller {
+  isValid: boolean
+  refreshTimer: number
+  locale: object
+
+  hasRefreshIntervalValue: boolean
+  datetimeValue: string
+  hasAddSuffixValue: boolean
+  hasIncludeSecondsValue: boolean
+  refreshIntervalValue: number
+
   static values = {
     datetime: String,
     refreshInterval: Number,
@@ -9,11 +19,11 @@ export default class extends Controller {
     addSuffix: Boolean
   }
 
-  initialize () {
+  initialize (): void {
     this.isValid = true
   }
 
-  connect () {
+  connect (): void {
     this.load()
 
     if (this.hasRefreshIntervalValue && this.isValid) {
@@ -21,14 +31,14 @@ export default class extends Controller {
     }
   }
 
-  disconnect () {
+  disconnect (): void {
     this.stopRefreshing()
   }
 
-  load () {
-    const datetime = this.datetimeValue
-    const date = Date.parse(datetime)
-    const options = {
+  load (): void {
+    const datetime: string = this.datetimeValue
+    const date: number = Date.parse(datetime)
+    const options: object = {
       includeSeconds: this.hasIncludeSecondsValue,
       addSuffix: this.hasAddSuffixValue,
       locale: this.locale
@@ -42,17 +52,18 @@ export default class extends Controller {
       )
     }
 
+    // @ts-ignore
     this.element.dateTime = datetime
     this.element.innerHTML = this.isValid ? formatDistanceToNow(date, options) : datetime
   }
 
-  startRefreshing () {
+  startRefreshing (): void {
     this.refreshTimer = setInterval(() => {
       this.load()
     }, this.refreshIntervalValue)
   }
 
-  stopRefreshing () {
+  stopRefreshing (): void {
     if (this.refreshTimer) {
       clearInterval(this.refreshTimer)
     }
