@@ -24,8 +24,9 @@
     "lint": "prettier-standard  '**/*.{js,css,html}' --lint",
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
+    "version": "yarn build",
     "test": "BABEL_ENV=test jest",
-    "publish": "np --no-2fa"
+    "np": "np --no-2fa"
   },
   "dependencies": {
     "date-fns": "^2.21.1"
