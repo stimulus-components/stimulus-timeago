@@ -1,6 +1,6 @@
 {
   "name": "stimulus-timeago",
-  "version": "2.0.0",
+  "version": "3.0.0-0",
   "description": "A Stimulus controller that returns the distance between the given date and now in words.",
   "keywords": [
     "stimulus",
