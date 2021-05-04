@@ -17,8 +17,8 @@
   "license": "MIT",
   "homepage": "https://github.com/stimulus-components/stimulus-timeago",
   "private": false,
-  "main": "dist/stimulus-timeago.es.js",
-  "module": "dist/stimulus-timeago.umd.js",
+  "main": "dist/stimulus-timeago.umd.js",
+  "module": "dist/stimulus-timeago.es.js",
   "scripts": {
     "format": "prettier-standard  '**/*.{js,css,html}' --format",
     "lint": "prettier-standard  '**/*.{js,css,html}' --lint",
