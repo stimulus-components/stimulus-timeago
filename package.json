@@ -20,9 +20,10 @@
   "main": "dist/stimulus-timeago.umd.js",
   "module": "dist/stimulus-timeago.es.js",
   "scripts": {
-    "format": "prettier-standard  '**/*.{js,css,html}' --format",
-    "lint": "prettier-standard  '**/*.{js,css,html}' --lint",
+    "format": "prettier-standard  '**/*.{ts,css,html}' --format",
+    "lint": "prettier-standard  '**/*.{ts,css,html}' --lint",
     "dev": "vite",
+    "prod": "vite build --config vite.browser.js",
     "build": "tsc --noEmit && vite build",
     "version": "yarn build",
     "test": "BABEL_ENV=test jest",
