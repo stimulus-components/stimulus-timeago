@@ -7,10 +7,11 @@ module.exports = {
       name: 'stimulus-timeago'
     },
     rollupOptions: {
-      external: ['date-fns', 'stimulus'],
+      external: ['dateFns', 'stimulus'],
       output: {
         globals: {
-          stimulus: 'Stimulus'
+          stimulus: 'Stimulus',
+          dateFns: 'dateFns'
         }
       }
     }

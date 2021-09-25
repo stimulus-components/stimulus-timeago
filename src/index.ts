@@ -1,4 +1,4 @@
-import { Controller } from 'stimulus'
+import { Controller } from '@hotwired/stimulus'
 import { formatDistanceToNow } from 'date-fns'
 
 export default class extends Controller {

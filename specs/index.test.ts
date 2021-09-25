@@ -1,5 +1,9 @@
+/**
+ * @jest-environment jsdom
+ */
+
 import { waitFor } from '@testing-library/dom'
-import { Application } from 'stimulus'
+import { Application } from '@hotwired/stimulus'
 import Timeago from '../src/index'
 
 const startStimulus = () => {
