@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Updating workflows
 - Updating Node to 16
 - Bump dependencies
+- Fixing external libraries
 
 ## [4.0.0] - 2021-09-25
 

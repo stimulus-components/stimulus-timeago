@@ -23,29 +23,29 @@
     "format": "prettier-standard  '**/*.{ts,css,html}' --format",
     "lint": "prettier-standard  '**/*.{ts,css,html}' --lint",
     "dev": "vite",
-    "prod": "vite build --config /dev/null",
+    "prod": "vite build --mode netlify",
     "build": "tsc --noEmit && vite build",
     "version": "yarn build",
     "test": "BABEL_ENV=test jest",
     "np": "np --no-2fa"
   },
   "dependencies": {
-    "date-fns": "^2.28.0"
+    "date-fns": "^2.29.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.0",
+    "@babel/core": "^7.19.6",
     "@babel/polyfill": "^7.12.1",
-    "@babel/preset-env": "^7.16.11",
-    "@babel/preset-typescript": "^7.16.7",
-    "@hotwired/stimulus": "^3.0.1",
-    "@testing-library/dom": "^8.11.3",
+    "@babel/preset-env": "^7.19.4",
+    "@babel/preset-typescript": "^7.18.6",
+    "@hotwired/stimulus": "^3.1.0",
+    "@testing-library/dom": "^8.19.0",
     "@types/jest": "^27.4.0",
     "babel-jest": "^27.4.6",
     "jest": "^27.4.7",
     "mutationobserver-shim": "^0.3.7",
-    "np": "^7.6.0",
+    "np": "^7.6.2",
     "prettier-standard": "16.4.1",
-    "typescript": "^4.5.5",
+    "typescript": "^4.8.4",
     "vite": "^2.7.13"
   },
   "peerDependencies": {
