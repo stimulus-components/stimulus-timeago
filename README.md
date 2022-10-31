@@ -13,7 +13,7 @@ A Stimulus controller that returns the distance between the given date and now i
 
 ## 📚 Documentation
 
-See [stimulus-timeago documentation](https://stimulus-components.netlify.app/docs/components/stimulus-timeago/).
+See [stimulus-timeago documentation](https://www.stimulus-components.com/docs/stimulus-timeago/).
 
 ## 👷‍♂️ Contributing
 
