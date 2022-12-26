@@ -11,3 +11,5 @@ specs
 tsconfig.json
 vite.config.js
 .prettierignore
+postcss.config.js
+tailwind.config.js
