@@ -8,8 +8,8 @@ export default class extends Controller {
 
   hasRefreshIntervalValue: boolean
   datetimeValue: string
-  hasAddSuffixValue: boolean
-  hasIncludeSecondsValue: boolean
+  addSuffixValue: boolean
+  includeSecondsValue: boolean
   refreshIntervalValue: number
 
   static values = {
@@ -39,8 +39,8 @@ export default class extends Controller {
     const datetime: string = this.datetimeValue
     const date: number = Date.parse(datetime)
     const options: object = {
-      includeSeconds: this.hasIncludeSecondsValue,
-      addSuffix: this.hasAddSuffixValue,
+      includeSeconds: this.includeSecondsValue,
+      addSuffix: this.addSuffixValue,
       locale: this.locale
     }
 
