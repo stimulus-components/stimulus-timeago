@@ -54,7 +54,7 @@ describe('#load', () => {
       <time
         data-controller="timeago"
         data-timeago-datetime-value="${lastMonth.toISOString()}"
-        data-timeago-add-suffix-value=""
+        data-timeago-add-suffix-value="true"
       ></time>.
     `
 
@@ -70,7 +70,7 @@ describe('#load', () => {
       <time
         data-controller="timeago"
         data-timeago-datetime-value="${fewSecondsAgo.toISOString()}"
-        data-timeago-include-seconds-value=""
+        data-timeago-include-seconds-value="true"
       ></time>.
     `
 
