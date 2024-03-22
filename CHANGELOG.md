@@ -1,10 +1,22 @@
 # Changelog
+
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [5.0.0] - 2024-03-22
+
+### Chore
+
+- Using proper value for option. Example: `data-timeago-add-suffix-value=""` is now `data-timeago-add-suffix-value="true"`
+- Renaming the component from `stimulus-timeago` to `@stimulus-components/timeago`
+- Upgrading dependencies
+- Exporting Typescript Types
+- Updating demo UI
+- Add [Stimulus LSP](https://github.com/marcoroth/stimulus-lsp) compatibility
 
 ## [4.1.0] - 2022-12-25
 
@@ -63,6 +75,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.2.0] - 2020-11-11
 
 ### Added
+
 - Adding `locale` support.
 
 ## [1.1.0] - 2020-11-06
