@@ -1,7 +1,7 @@
 import { Controller } from "@hotwired/stimulus"
 import { formatDistanceToNow, FormatDistanceToNowOptions, Locale } from "date-fns"
 
-export default class extends Controller<HTMLTimeElement> {
+export default class Timeago extends Controller<HTMLTimeElement> {
   isValid: boolean
   refreshTimer: number
   locale: Pick<Locale, "formatDistance">
