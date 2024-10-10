@@ -1,7 +1,7 @@
 # Stimulus Timeago
 
-[![](https://img.shields.io/npm/dt/stimulus-timeago.svg)](https://www.npmjs.com/package/stimulus-timeago)
-[![](https://img.shields.io/npm/v/stimulus-timeago.svg)](https://www.npmjs.com/package/stimulus-timeago)
+[![](https://img.shields.io/npm/d18m/%40stimulus-components%2Ftimeago)](https://www.npmjs.com/package/@stimulus-components/timeago)
+[![](https://img.shields.io/npm/v/%40stimulus-components%2Ftimeago)](https://www.npmjs.com/package/@stimulus-components/timeago)
 [![](https://github.com/stimulus-components/stimulus-timeago/workflows/Lint/badge.svg)](https://github.com/stimulus-components/stimulus-timeago)
 [![](https://github.com/stimulus-components/stimulus-timeago/workflows/Test/badge.svg)](https://github.com/stimulus-components/stimulus-timeago)
 [![](https://img.shields.io/github/license/stimulus-components/stimulus-timeago.svg)](https://github.com/stimulus-components/stimulus-timeago)
